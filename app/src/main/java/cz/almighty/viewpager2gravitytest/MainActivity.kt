@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         viewPager.adapter = tabsAdapter
 
         TabLayoutMediator(tabLayout, viewPager,
-            TabLayoutMediator.OnConfigureTabCallback { tab, position ->
+            TabLayoutMediator.TabConfigurationStrategy { tab, position ->
                 tab.text = tabsAdapter.getPageTitle(position)
             }).attach()
 

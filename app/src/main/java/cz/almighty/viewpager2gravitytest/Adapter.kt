@@ -13,7 +13,7 @@ class Adapter(fragmentActivity: FragmentActivity) : FragmentStateAdapter(fragmen
         return when (position) {
             0 -> Fragment1()
             1 -> FragmentForm()
-            2 -> Fragment1()
+            2 -> Fragment2()
             else -> throw UnsupportedOperationException("Invalid position")
         }
     }
